@@ -56,4 +56,3 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 
 
 
-

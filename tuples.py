@@ -4,6 +4,7 @@
 # tuple_een krijgt de waarden 1, 2 en 3. tuple_twee krijgt de waarden 4, 5 en 6.
 # Zorg dat je een tuple krijgt met de waarden 1, 2, 3, 4, 5 en 6. Onthoud dat tuples onveranderlijk zijn.
 # ==========================================
+from lists import getallen
 
 tuple_een = (1, 2, 3)
 tuple_twee = (4, 5, 6)
@@ -23,7 +24,8 @@ print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
 #
 # Verwachte uitkomst:  a b c
 # ==========================================
-
+letters = ('b','c','a')
+print(letters[2], letters[1], letters[0])
 
 
 # ==========================================
@@ -33,7 +35,8 @@ print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
 #
 # Verwachte uitkomst: [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 # ==========================================
-
+getal_kwadraat_paar = [(x, x**2) for x in range(1, 6)]
+print(getal_kwadraat_paar)
 
 
 # =========================================
@@ -44,3 +47,6 @@ print('combined tuple: ', combined_tuple)  # Het resultaat is: (1, 2, 3, 4, 5, 6
 #
 # Verwachte uitkomst: (5, 4, 3, 2, 1)
 # ==========================================
+tuple_count = (1, 2, 3, 4, 5)
+omgekeerd = tuple(reversed(tuple_count))
+print(omgekeerd)
